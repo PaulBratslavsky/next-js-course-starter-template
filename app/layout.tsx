@@ -15,7 +15,7 @@ export default function RootLayoutRoute({
   readonly children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="dracula">
       <body className="wrapper">
         <TopNav />
         <main>{children}</main>

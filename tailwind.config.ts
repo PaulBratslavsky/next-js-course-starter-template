@@ -9,7 +9,7 @@ const config: Config = {
 
 
   daisyui: {
-    themes: ["light", "dark", "retro"],
+    themes: ["light", "dark", "retro", "wireframe", "dracula"],
   },
 
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
