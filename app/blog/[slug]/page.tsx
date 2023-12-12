@@ -31,7 +31,7 @@ export default function Post() {
                   alt="article cover"
                   width={400}
                   height={400}
-                  className="w-14 h-14 border rounded-full dark:bg-gray-500 dark:border-gray-700"
+                  className="w-14 h-14 rounded-full dark:bg-gray-500 dark:border-gray-700"
                 />
               )}
               <p className="text-md dark:text-violet-400">

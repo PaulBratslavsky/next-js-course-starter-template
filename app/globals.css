@@ -12,32 +12,32 @@
 
 /* Headers */
 .rich-text h1 {
-  @apply text-4xl font-bold mb-4 text-gray-900;
+  @apply text-4xl font-bold mb-4;
 }
 
 .rich-text h2 {
-  @apply text-3xl font-bold mb-4 text-gray-800;
+  @apply text-3xl font-bold mb-4;
 }
 
 .rich-text h3 {
-  @apply text-2xl font-bold mb-4 text-gray-800;
+  @apply text-2xl font-bold mb-4;
 }
 
 .rich-text h4 {
-  @apply text-xl font-bold mb-4 text-gray-800;
+  @apply text-xl font-bold mb-4;
 }
 
 .rich-text h5 {
-  @apply text-lg font-bold mb-4 text-gray-800;
+  @apply text-lg font-bold mb-4;
 }
 
 .rich-text h6 {
-  @apply text-base font-bold mb-4 text-gray-800;
+  @apply text-base font-bold mb-4;
 }
 
 /* Horizontal rules */
 .rich-text hr {
-  @apply border-gray-300 my-8;
+  @apply  my-8;
 }
 
 .rich-text a {
@@ -46,7 +46,7 @@
 
 /* Typographic replacements */
 .rich-text p {
-  @apply mb-4 border-gray-300  tracking-wide;
+  @apply mb-4   tracking-wide;
 }
 
 /* Emphasis */
@@ -64,7 +64,7 @@
 
 /* Blockquotes */
 .rich-text blockquote {
-  @apply border-l-4 border-gray-400 pl-4 py-2 mb-4;
+  @apply border-l-4  pl-4 py-2 mb-4;
 }
 
 /* Lists */
@@ -90,24 +90,24 @@
 
 /* Code blocks */
 .rich-text pre {
-  @apply font-mono bg-gray-900 text-gray-100 rounded p-4  my-6;
+  @apply font-mono  rounded p-4  my-6;
 }
 
 .rich-text code {
-  @apply font-mono bg-gray-900 text-gray-100 rounded px-2 py-1;
+  @apply font-mono  rounded px-2 py-1;
 }
 
 /* Tables */
 .rich-text table {
-  @apply w-full border-collapse border-gray-300 my-6;
+  @apply w-full border-collapse  my-6;
 }
 
 .rich-text th {
-  @apply bg-gray-900 text-left py-2 px-4 font-semibold border-b border-gray-300;
+  @apply text-left py-2 px-4 font-semibold border-b ;
 }
 
 .rich-text td {
-  @apply py-2 px-4 border-b border-gray-300;
+  @apply py-2 px-4 border-b ;
 }
 
 /* Images */
@@ -117,5 +117,5 @@
 
 /* Custom containers */
 .rich-text .warning {
-  @apply bg-yellow-100 border-yellow-500 text-yellow-700 px-4 py-2 rounded-lg mb-4;
+  @apply bg-warning border-warning px-4 py-2 rounded-lg mb-4;
 }

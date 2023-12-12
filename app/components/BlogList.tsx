@@ -129,6 +129,18 @@ interface PostProps {
   };
 }
 
+export default function BlogList() {
+  return (
+    <div className="my-6">
+      <div className="grid gap-y-8 gap-x-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        {posts.map((post) => (
+          <BlogListCard key={post.id} post={post} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function BlogListCard({ post }: PostProps) {
   return (
     <Link href={post.slug}>
@@ -171,17 +183,5 @@ function BlogListCard({ post }: PostProps) {
         </div>
       </article>
     </Link>
-  );
-}
-
-export default function BlogList() {
-  return (
-    <div className="my-6">
-      <div className="grid gap-y-8 gap-x-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        {posts.map((post) => (
-          <BlogListCard key={post.id} post={post} />
-        ))}
-      </div>
-    </div>
   );
 }

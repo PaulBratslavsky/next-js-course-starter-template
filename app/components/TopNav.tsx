@@ -14,7 +14,7 @@ export default function TopNav() {
   return (
     <div className="navbar bg-base-100 shadow-lg rounded-lg">
       <div className="navbar-start">
-        <Link href="/" className="btn btn-ghost text-xl">daisyUI</Link>
+        <Link href="/" className="btn btn-ghost text-xl">Strapi + Next</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

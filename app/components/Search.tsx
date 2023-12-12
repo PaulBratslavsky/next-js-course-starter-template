@@ -4,7 +4,7 @@ export default function Search() {
       <input
         type="text"
         placeholder="Search"
-        className="input input-bordered w-full md:w-auto"
+        className="input input-primary input-bordered w-full md:w-auto"
       />
     </div>
   );

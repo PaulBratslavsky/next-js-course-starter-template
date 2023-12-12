@@ -87,32 +87,29 @@ export default function Comments() {
           <ul className="space-y-6">
             {activity.map((activityItem) => (
               <li key={activityItem.id} className="relative flex gap-x-4">
-                <div>
-                  <div className="w-px bg-gray-200" />
-                </div>
                 <img
                   src={activityItem.person.imageUrl}
                   alt=""
-                  className="relative mt-3 h-6 w-6 flex-none rounded-full bg-gray-50"
+                  className="relative mt-3 h-6 w-6 flex-none rounded-full bg-base-100 ring-2 ring-base-300"
                 />
-                <div className="flex-auto rounded-md p-3 ring-1 ring-inset ring-gray-200">
+                <div className="flex-auto rounded-md p-3 ring-1 ring-inset ring-base-300">
                   <div className="flex justify-between gap-x-4">
-                    <div className="py-0.5 text-xs leading-5 text-gray-500">
-                      <span className="font-medium text-gray-900">
+                    <div className="py-0.5 text-xs leading-5 flex gap-2">
+                      <span className="font-medium text-secondary">
                         {activityItem.person.name}
-                      </span>{" "}
-                      commented
+                      </span>
+                      <span className="font-medium text-primary">
+                        commented
+                      </span>
                     </div>
                     <time
                       dateTime={activityItem.dateTime}
-                      className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                      className="flex-none py-0.5 text-xs leading-5"
                     >
                       {activityItem.date}
                     </time>
                   </div>
-                  <p className="text-sm leading-6 text-gray-500">
-                    {activityItem.comment}
-                  </p>
+                  <p className="text-sm leading-6">{activityItem.comment}</p>
                 </div>
               </li>
             ))}
@@ -123,7 +120,7 @@ export default function Comments() {
         <form action="#" className="w-full">
           <textarea
             placeholder="Comment"
-            className="textarea textarea-bordered textarea-lg w-full"
+            className="textarea textarea-bordered border-base-300 textarea-lg w-full "
           ></textarea>
           <button type="submit" className="btn btn-primary float-right mt-2">
             Comment
