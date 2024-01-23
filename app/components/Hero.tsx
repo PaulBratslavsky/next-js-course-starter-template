@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeroProps {
   readonly data: {
@@ -20,8 +21,10 @@ export default function Hero({ data } : HeroProps) {
   return (
     <div className="hero my-12 rounded-lg">
       <div className="hero-content p-0 flex-col lg:flex-row">
-        <img
+        <Image
           src={image.url}
+          width={500}
+          height={500}
           alt={image.alternativeText}
           className="max-w-sm rounded-lg shadow-2xl"
         />
