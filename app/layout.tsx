@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { globalData } from "@/app/fake-data";
+
 import TopNav from "@/app/components/TopNav";
 import Footer from "@/app/components/Footer";
 
@@ -17,9 +19,9 @@ export default function RootLayoutRoute({
   return (
     <html lang="en" data-theme="dracula">
       <body className="wrapper">
-        <TopNav />
+        <TopNav data={globalData.topNav} />
         <main>{children}</main>
-        <Footer />
+        <Footer data={globalData.footer} />
       </body>
     </html>
   );
