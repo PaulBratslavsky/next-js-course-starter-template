@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface HeroProps {
-  readonly data: {
+  data: {
     heading: string;
     text: string;
     image: {
@@ -16,7 +16,7 @@ interface HeroProps {
   };
 }
 
-export default function Hero({ data } : HeroProps) {
+export default function Hero({ data }: Readonly<HeroProps>) {
   const { heading, text, image, link } = data;
   return (
     <div className="hero my-12 rounded-lg">

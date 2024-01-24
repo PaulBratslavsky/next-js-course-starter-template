@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface ImageProps {
-  readonly url: string;
-  readonly alternateText: string;
+  url: string;
+  alternateText: string;
 }
 
 interface PostProps {

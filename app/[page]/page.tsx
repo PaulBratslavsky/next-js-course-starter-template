@@ -1,10 +1,12 @@
 interface DynamicPageParams {
-  readonly params: {
+  params: {
     page: string;
   };
 }
 
-export default function DynamicPageRoute({ params }: DynamicPageParams) {
+export default function DynamicPageRoute({
+  params,
+}: Readonly<DynamicPageParams>) {
   return (
     <div className="hero bg-base-200 h-[500px] my-4 rounded-md">
       <div className="hero-content">

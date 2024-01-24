@@ -1,6 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { usePathname, useSearchParams } from "next/navigation";
+import { FC } from "react";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 interface PaginationProps {
   totalPages: number;
@@ -12,11 +12,11 @@ interface PaginationArrowProps {
   isDisabled: boolean;
 }
 
-function PaginationArrow({
+const PaginationArrow: FC<PaginationArrowProps> = ({
   direction,
   href,
   isDisabled,
-}: PaginationArrowProps) {
+}) => {
   const router = useRouter();
   const isLeft = direction === "left";
   const disabledClassName = isDisabled ? "opacity-50 cursor-not-allowed" : "";
@@ -31,9 +31,11 @@ function PaginationArrow({
       {isLeft ? "«" : "»"}
     </button>
   );
-}
+};
 
-export default function Pagination({ totalPages = 5 }: PaginationProps) {
+export default function Pagination({
+  totalPages = 5,
+}: Readonly<PaginationProps>) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const currentPage = Number(searchParams.get("page")) || 1;

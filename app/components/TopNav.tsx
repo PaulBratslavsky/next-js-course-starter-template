@@ -6,14 +6,14 @@ interface NavItemProps {
 }
 
 interface NavItemsProps {
-  readonly data: {
+  data: {
     logoText: string;
     navItems: NavItemProps[];
     cta: NavItemProps;
   };
 }
 
-export default function TopNav({ data }: NavItemsProps) {
+export default function TopNav({ data }: Readonly<NavItemsProps>) {
   const { logoText, navItems, cta } = data;
   return (
     <div className="navbar bg-base-100 shadow-lg rounded-lg">

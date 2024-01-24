@@ -6,12 +6,12 @@ import {
 } from "@/app/icons/index";
 
 interface SocialLinkProps {
-  readonly href: string;
-  readonly icon: string;
+  href: string;
+  icon: string;
 }
 
 interface SocialLinksProps {
-  readonly data: {
+  data: {
     socialLinks: SocialLinkProps[];
   };
 }
@@ -34,7 +34,7 @@ function SocialLink({ data }: { readonly data: SocialLinkProps }) {
   return <a href={href}>{selectIcon(icon)}</a>;
 }
 
-export default function Footer({ data }: SocialLinksProps) {
+export default function Footer({ data }: Readonly<SocialLinksProps>) {
   const { socialLinks } = data;
   return (
     <footer className="footer items-center p-4 bg-neutral text-neutral-content rounded-lg">
