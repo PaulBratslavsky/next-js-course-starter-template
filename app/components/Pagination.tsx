@@ -3,7 +3,6 @@ import { useRouter } from "next/navigation";
 import { usePathname, useSearchParams } from "next/navigation";
 
 interface PaginationProps {
-  currentPage: number;
   totalPages: number;
 }
 

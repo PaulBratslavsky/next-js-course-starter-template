@@ -15,7 +15,6 @@ interface NavItemsProps {
 
 
 export default function TopNav({ data }: NavItemsProps) {
-  console.log(data);
   const { logoText, navItems } = data;
   return (
     <div className="navbar bg-base-100 shadow-lg rounded-lg">

@@ -1,139 +1,36 @@
 import Link from "next/link";
+import Image from "next/image";
 
-const posts = [
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    slug: "/blog/slug-to-post",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    category: { title: "Marketing" },
-    author: {
-      name: "Michael Foster",
-      role: "Co-Founder / CTO",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-];
+interface ImageProps {
+  readonly url: string;
+  readonly alternateText: string;
+}
 
 interface PostProps {
-  readonly post: {
-    id: number;
-    title: string;
-    slug: string;
-    description: string;
-    imageUrl: string;
-    date: string;
-    datetime: string;
-    category: { title: string };
-    author: {
-      name: string;
-      role: string;
-      imageUrl: string;
-    };
+  id: number;
+  title: string;
+  slug: string;
+  description: string;
+  image: ImageProps;
+  date: string;
+  createdAt: string;
+  category: { title: string };
+  author: {
+    name: string;
+    role: string;
+    image: ImageProps;
   };
 }
 
-export default function BlogList() {
+interface BlogListProps {
+  readonly data: PostProps[];
+}
+
+export default function BlogList({ data }: BlogListProps) {
   return (
     <div className="my-6">
       <div className="grid gap-y-8 gap-x-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        {posts.map((post) => (
+        {data.map((post: PostProps) => (
           <BlogListCard key={post.id} post={post} />
         ))}
       </div>
@@ -141,20 +38,22 @@ export default function BlogList() {
   );
 }
 
-function BlogListCard({ post }: PostProps) {
+function BlogListCard({ post }: { readonly post: PostProps }) {
   return (
     <Link href={post.slug}>
       <article className="shadow-lg rounded-lg">
         <div className="relative w-full">
-          <img
-            src={post.imageUrl}
-            alt=""
+          <Image
+            src={post.image.url}
+            alt={post.image.alternateText}
+            height={400}
+            width={400}
             className="aspect-[16/9] w-full rounded-t-lg bg-base-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
           />
         </div>
         <div className="p-6">
           <div className="flex items-center justify-between gap-x-4 text-xs">
-            <time dateTime={post.datetime}>{post.date}</time>
+            <time dateTime={post.createdAt}>{post.date}</time>
             <div className="badge badge-ghost">{post.category.title}</div>
           </div>
           <div className="group relative">
@@ -169,7 +68,12 @@ function BlogListCard({ post }: PostProps) {
           <div className="relative mt-8 flex items-center gap-x-4">
             <div className="avatar">
               <div className="w-20 rounded-full">
-                <img src={post.author.imageUrl} alt="" />
+                <Image
+                  src={post.author.image.url}
+                  alt={post.author.image.alternateText}
+                  height={400}
+                  width={400}
+                />
               </div>
             </div>
             <div className="text-sm leading-6">

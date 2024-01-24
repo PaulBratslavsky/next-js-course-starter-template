@@ -1,83 +1,14 @@
-const activity = [
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-  {
-    id: 4,
-    type: "commented",
-    person: {
-      name: "Chelsea Hagon",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    comment:
-      "Called client, they reassured me the invoice would be paid by the 25th.",
-    date: "3d ago",
-    dateTime: "2023-01-23T15:56",
-  },
-];
+import { activity } from "@/app/fake-data";
+
+interface ActivityItemProps {
+  id: number;
+  person: {
+    name: string;
+  };
+  dateTime: string;
+  date: string;
+  comment: string;
+}
 
 export default function Comments() {
   return (
@@ -85,7 +16,7 @@ export default function Comments() {
       <div className="my-6">
         <div className="h-[500px] overflow-scroll">
           <ul className="space-y-6">
-            {activity.map((activityItem) => (
+            {activity.map((activityItem: ActivityItemProps) => (
               <li key={activityItem.id} className="relative flex gap-x-4">
                 <div className="flex-auto rounded-md p-3 ring-1 ring-inset ring-base-300">
                   <div className="flex justify-between gap-x-4">

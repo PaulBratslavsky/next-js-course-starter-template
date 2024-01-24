@@ -23,6 +23,7 @@ export default function RegisterForm() {
                 type="text"
                 name="username"
                 placeholder="Enter your email or username"
+                required
               />
               <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:" />
             </div>
@@ -41,6 +42,7 @@ export default function RegisterForm() {
                 type="email"
                 name="email"
                 placeholder="Enter your email or username"
+                required
               />
               <AtSymbolIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:" />
             </div>
@@ -60,6 +62,7 @@ export default function RegisterForm() {
                 name="password"
                 placeholder="Enter password"
                 minLength={6}
+                required
               />
               <KeyIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:" />
             </div>
