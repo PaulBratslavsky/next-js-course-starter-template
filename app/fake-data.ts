@@ -6,6 +6,10 @@ export const globalData = {
       { text: "Blog", href: "/blog" },
       { text: "About", href: "/about" },
     ],
+    cta: {
+      text: "Login",
+      href: "/login",
+    },
   },
   footer: {
     socialLinks: [

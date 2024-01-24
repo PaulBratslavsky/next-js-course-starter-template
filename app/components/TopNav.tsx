@@ -9,17 +9,18 @@ interface NavItemsProps {
   readonly data: {
     logoText: string;
     navItems: NavItemProps[];
-  }
+    cta: NavItemProps;
+  };
 }
 
-
-
 export default function TopNav({ data }: NavItemsProps) {
-  const { logoText, navItems } = data;
+  const { logoText, navItems, cta } = data;
   return (
     <div className="navbar bg-base-100 shadow-lg rounded-lg">
       <div className="navbar-start">
-        <Link href="/" className="btn btn-ghost text-xl">{logoText}</Link>
+        <Link href="/" className="btn btn-ghost text-xl">
+          {logoText}
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -33,7 +34,9 @@ export default function TopNav({ data }: NavItemsProps) {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="/login" className="btn">Login</Link>
+        <Link href={cta.href} className="btn">
+          {cta.text}
+        </Link>
       </div>
     </div>
   );
