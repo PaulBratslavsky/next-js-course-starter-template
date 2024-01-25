@@ -33,23 +33,25 @@ export const heroData = {
   },
 };
 
-export const featuresData = [
-  {
-    name: "1 Unlimited inboxes",
-    description:
-      "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
-  },
-  {
-    name: "2 Manage team members",
-    description:
-      "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
-  },
-  {
-    name: "3 Spam report",
-    description:
-      "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
-  },
-];
+export const featuresData = {
+  feature: [
+    {
+      name: "1 Unlimited inboxes",
+      description:
+        "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
+    },
+    {
+      name: "2 Manage team members",
+      description:
+        "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
+    },
+    {
+      name: "3 Spam report",
+      description:
+        "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
+    },
+  ],
+};
 
 export const posts = [
   {
@@ -141,29 +143,8 @@ export const post = {
       alternateText: "Michael Foster",
     },
   },
-  content: `
-    # The Beauty of Autumn
-
-    ## Introduction
-    Autumn is a magical season, filled with a mosaic of colors and a crispness in the air that refreshes the soul. In this blog post, we'll explore why autumn is so beloved and what makes it truly special.
-
-    ### The Colors of Autumn
-    The leaves turn various shades of red, orange, and yellow, creating a vibrant tapestry that transforms the landscape. This metamorphosis is due to the chlorophyll in leaves breaking down, revealing these stunning colors.
-
-    #### Walking Through a Fall Forest
-    Imagine walking through a forest on a cool autumn day. The ground is a carpet of fallen leaves, and each step releases a soft, earthy scent. It's a sensory experience like no other.
-
-    ##### The Harvest Season
-    Autumn is also a time of harvest. Apples, pumpkins, and squash are just a few of the season's bounties. Harvest festivals celebrate this abundance with food, music, and community gatherings.
-
-    ###### A Time for Reflection
-    As the days grow shorter and the nights longer, autumn invites us to slow down and reflect. It's a time to enjoy the warmth of a fire and the company of loved ones.
-
-    ## Conclusion
-    Autumn's beauty lies in its fleeting nature. It reminds us to appreciate the present moment, revel in nature's wonders, and embrace change.
-
-    *Happy Autumn!*
-  `,
+  content:
+    "# The Beauty of Autumn",
 };
 
 export const activity = [

@@ -1,17 +1,23 @@
 interface FeatureProps {
+  id: number;
   name: string;
   description: string;
 }
 
 interface FeaturesProps {
-  readonly data: FeatureProps[];
+  data: {
+    feature: FeatureProps[];
+  };
 }
 
-export default function Feature({ data }: FeaturesProps) {
+export default function Features({ data }: Readonly<FeaturesProps>) {
+  console.log(data);
+  if (!data?.feature) return <p>No items found.</p>;
+  const { feature } = data;
   return (
     <div className="my-24 rounded-lg bg-base-100">
       <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-        {data.map((feature: FeatureProps) => (
+        {feature.map((feature: FeatureProps) => (
           <div key={feature.name} className="flex flex-col">
             <dt className="text-primary font-semibold leading-7">
               {feature.name}
