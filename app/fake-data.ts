@@ -1,6 +1,6 @@
 export const globalData = {
   topNav: {
-    logoText: "Strapi + Next",
+    logoText: { text: "Strapi + Next", href: "/" },
     navItems: [
       { text: "Home", href: "/" },
       { text: "Blog", href: "/blog" },
