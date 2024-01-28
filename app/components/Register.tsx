@@ -22,7 +22,7 @@ export default function RegisterForm() {
                 id="username"
                 type="text"
                 name="username"
-                placeholder="Enter your email or username"
+                placeholder="Enter your username"
                 required
               />
               <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:" />

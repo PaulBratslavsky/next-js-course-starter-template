@@ -4,7 +4,7 @@ import Search from "@/app/components/Search";
 
 import { posts } from "@/app/fake-data";
 
-export default function AboutRoute() {
+export default function BlogRoute() {
   return (
     <div>
       <Search />

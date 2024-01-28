@@ -2,23 +2,21 @@ interface FeatureProps {
   id: number;
   name: string;
   description: string;
+
 }
 
 interface FeaturesProps {
-  data: {
-    feature: FeatureProps[];
-  };
+  feature: FeatureProps[];
 }
 
-export default function Features({ data }: Readonly<FeaturesProps>) {
-  console.log(data);
+export default function Features({ data }: { data: FeaturesProps }) {
   if (!data?.feature) return <p>No items found.</p>;
   const { feature } = data;
   return (
     <div className="my-24 rounded-lg bg-base-100">
       <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
         {feature.map((feature: FeatureProps) => (
-          <div key={feature.name} className="flex flex-col">
+          <div key={feature.id} className="flex flex-col">
             <dt className="text-primary font-semibold leading-7">
               {feature.name}
             </dt>
