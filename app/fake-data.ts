@@ -37,19 +37,19 @@ export const featuresData = {
   feature: [
     {
       id: 1,
-      name: "1 Unlimited inboxes",
+      text: "1 Unlimited inboxes",
       description:
         "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
     },
     {
       id: 2,
-      name: "2 Manage team members",
+      text: "2 Manage team members",
       description:
         "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
     },
     {
       id: 3,
-      name: "3 Spam report",
+      text: "3 Spam report",
       description:
         "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
     },
